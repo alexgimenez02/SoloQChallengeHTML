@@ -85,7 +85,7 @@ div{
 
 <script>
     let i = 0, j = 0;
-    const licence_index = ["0", "5", "7", "10", "11", "16","17","18", "21", "25", "26", "29", "31", "32"]
+    const licence_index = ["0", "5", "7", "10", "11", "16","17","18", "21", "25", "26", "29", "31", "32", "37"]
     const surv_array = [
         "Dwight Fairfield",
         "Meg Thomas",
@@ -125,7 +125,7 @@ div{
         "Renato Lyra",
         "Gabriel Soma",
         "Nicolas Cage"
-    ];
+    ]
     const surv_images = [
     "https://deadbydaylight.com/static/e5627292159dc8c69e4e68d9d0634938/1f375/survivor_dwight_headshot_bb6a42f2bf.png", //Dwight
     "https://deadbydaylight.com/static/fab94fa7f8b7628ebea4422d30905817/1f375/survivor_meg_headshot_f033880a7f.png", //Meg
@@ -169,20 +169,20 @@ div{
   document.addEventListener('keydown', event => {
   switch (event.key) {
     case 'r':
-      i = j;
-      break;
+      i = j
+      break
     case 'ArrowLeft':
-      i--;
-      break;
+      i--
+      break
     case 'ArrowRight':
-      i++;
-      break;
+      i++
+      break
       }
     if(i < 0){
         i = 0;
     }
     if (i > surv_array.length - 1){
-        i = surv_array.length - 1;    
+        i = surv_array.length - 1  
     }
     if (licence_index.includes(""+i)){
         j = i
